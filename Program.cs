@@ -1,7 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Jobs;
-using BenchmarkDotNet.Running;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 
@@ -35,7 +34,7 @@ static class Program {
 
         // bench
 #if RELEASE
-        BenchmarkRunner.Run<SequenceReaderBenchmark>(args: args);
+        BenchmarkDotNet.Running.BenchmarkRunner.Run<SequenceReaderBenchmark>(args: args);
 #endif
     }
 }
