@@ -7,6 +7,7 @@
         <Nullable>enable</Nullable>
         <LangVersion>11</LangVersion>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <NoWarn>$(NoWarn);IDE0017;IDE0056;IDE0057;IDE0064;SPELL</NoWarn>
         <!--<DefineConstants Condition="'$(TargetFramework)'=='net7.0'">$(DefineConstants);UNSAFE_READER</DefineConstants>-->
     </PropertyGroup>
 

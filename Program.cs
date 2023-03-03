@@ -16,8 +16,10 @@ namespace SequenceReaderBenchmarks;
 static class Program {
     static void Main(string[] args) {
         unsafe {
+#pragma warning disable CS8500
             Console.WriteLine("System size: " + sizeof(System.Buffers.SequenceReader<int>));
             Console.WriteLine("Custom size: " + sizeof(System.Buffers2.SequenceReader<int>));
+#pragma warning restore CS8500
         }
         // perform validations
         var obj = new SequenceReaderBenchmark();
@@ -168,14 +170,14 @@ public class SequenceReaderBenchmark {
     [Benchmark(Baseline = true)]
     public void SystemTryReadTo() {
         var reader = new System.Buffers.SequenceReader<int>(payload);
-        if (reader.TryReadTo(out ReadOnlySpan<int> span, 255)) Throw();
+        if (reader.TryReadTo(out ReadOnlySpan<int> _, 255)) Throw();
     }
 
     [BenchmarkCategory("TryReadTo")]
     [Benchmark]
     public void CustomTryReadTo() {
         var reader = new System.Buffers2.SequenceReader<int>(payload);
-        if (reader.TryReadTo(out ReadOnlySpan<int> span, 255)) Throw();
+        if (reader.TryReadTo(out ReadOnlySpan<int> _, 255)) Throw();
     }
 
     [DoesNotReturn]
