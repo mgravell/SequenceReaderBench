@@ -6,7 +6,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace SequenceReaderBenchmarks;
 
-/* The original purpose of this suite was to invesigate performance
+/* The original purpose of this suite was to investigate performance
  * tweaks possible in SequenceReader<T>; however, it seems to show
  * some weird JIT? PGO? tiered JIT? regressions in some key paths,
  * where it works well in net6, but less well in net7/net8
