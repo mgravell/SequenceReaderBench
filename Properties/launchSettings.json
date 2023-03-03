@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "SequenceReaderBenchmarks": {
+      "commandName": "Project",
+      "commandLineArgs": "--allCategories=Advance",
+      "hotReloadEnabled": false
+    }
+  }
+}
