@@ -2,6 +2,7 @@
 using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Running;
+using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 
 namespace SequenceReaderBenchmarks;
@@ -14,6 +15,10 @@ namespace SequenceReaderBenchmarks;
 
 static class Program {
     static void Main(string[] args) {
+        unsafe {
+            Console.WriteLine("System size: " + sizeof(System.Buffers.SequenceReader<int>));
+            Console.WriteLine("Custom size: " + sizeof(System.Buffers2.SequenceReader<int>));
+        }
         // perform validations
         var obj = new SequenceReaderBenchmark();
 
@@ -109,6 +114,7 @@ public class SequenceReaderBenchmark {
     public int SystemPosition() {
         var reader = new System.Buffers.SequenceReader<int>(payload);
         reader.Advance(17);
+        Debug.Assert(payload.GetOffset(reader.Position) == 17);
         int chk = 0; // doesn't advance, so: loop
         for (int i = 0; i < TotalLength; i++) {
             chk ^= reader.Position.GetInteger(); // to avoid erasure
@@ -121,9 +127,11 @@ public class SequenceReaderBenchmark {
     public int CustomPosition() {
         var reader = new System.Buffers2.SequenceReader<int>(payload);
         reader.Advance(17);
+        Debug.Assert(payload.GetOffset(reader.Position) == 17);
         int chk = 0; // doesn't advance, so: loop
         for (int i = 0; i < TotalLength; i++) {
             chk ^= reader.Position.GetInteger(); // to avoid erasure
+            
         }
         return chk;
     }
@@ -132,9 +140,13 @@ public class SequenceReaderBenchmark {
     [Benchmark(Baseline = true)]
     public void SystemAdvance() {
         var reader = new System.Buffers.SequenceReader<int>(payload);
+        Debug.Assert(payload.GetOffset(reader.Position) == 0);
         for (int i = 0; i < TotalLength; i++) {
+            Debug.Assert(!reader.End);
+            Debug.Assert(payload.GetOffset(reader.Position) == i);
             reader.Advance(1);
         }
+        Debug.Assert(payload.GetOffset(reader.Position) == TotalLength);
         if (!reader.End) Throw();
     }
 
@@ -142,9 +154,13 @@ public class SequenceReaderBenchmark {
     [Benchmark]
     public void CustomAdvance() {
         var reader = new System.Buffers2.SequenceReader<int>(payload);
+        Debug.Assert(payload.GetOffset(reader.Position) == 0);
         for (int i = 0; i < TotalLength; i++) {
+            Debug.Assert(!reader.End);
+            Debug.Assert(payload.GetOffset(reader.Position) == i);
             reader.Advance(1);
         }
+        Debug.Assert(payload.GetOffset(reader.Position) == TotalLength);
         if (!reader.End) Throw();
     }
 
