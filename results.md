@@ -8,223 +8,220 @@ Intel Core i9-9900K CPU 3.60GHz (Coffee Lake), 1 CPU, 16 logical and 8 physical 
   .NET 8.0 : .NET 8.0.0 (8.0.23.11008), X64 RyuJIT AVX2
 ```
 
-|               Method |      Job |  Runtime |     Categories | SegmentLength |        Mean |     Error |     StdDev | Ratio | RatioSD |
-|--------------------- |--------- |--------- |--------------- |-------------- |------------:|----------:|-----------:|------:|--------:|
-|        SystemAdvance | .NET 6.0 | .NET 6.0 |        Advance |         -1024 |    1.148 us | 0.0107 us |   1.147 us |  1.00 |    0.00 |
-|        CustomAdvance | .NET 6.0 | .NET 6.0 |        Advance |         -1024 |    1.363 us | 0.0157 us |   1.356 us |  1.19 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemAdvance | .NET 6.0 | .NET 6.0 |        Advance |             4 |    4.216 us | 0.0801 us |   4.194 us |  1.00 |    0.00 |
-|        CustomAdvance | .NET 6.0 | .NET 6.0 |        Advance |             4 |    3.431 us | 0.0631 us |   3.417 us |  0.81 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemAdvance | .NET 6.0 | .NET 6.0 |        Advance |           128 |    1.300 us | 0.0206 us |   1.301 us |  1.00 |    0.00 |
-|        CustomAdvance | .NET 6.0 | .NET 6.0 |        Advance |           128 |    1.481 us | 0.0135 us |   1.480 us |  1.14 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemAdvance | .NET 6.0 | .NET 6.0 |        Advance |          1024 |    1.150 us | 0.0171 us |   1.149 us |  1.00 |    0.00 |
-|        CustomAdvance | .NET 6.0 | .NET 6.0 |        Advance |          1024 |    1.357 us | 0.0117 us |   1.355 us |  1.18 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-| SystemAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |         -1024 |   552.85 ns | 10.176 ns |   9.519 ns |  1.00 |    0.00 |
-| CustomAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |         -1024 |   491.16 ns |  9.523 ns |  11.695 ns |  0.89 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-| SystemAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |             4 | 3,271.24 ns | 41.743 ns |  39.047 ns |  1.00 |    0.00 |
-| CustomAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |             4 | 3,041.88 ns | 35.820 ns |  33.506 ns |  0.93 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-| SystemAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |           128 |   836.74 ns | 16.583 ns |  15.511 ns |  1.00 |    0.00 |
-| CustomAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |           128 |   646.96 ns | 11.025 ns |  10.313 ns |  0.77 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-| SystemAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |          1024 |   541.98 ns |  6.899 ns |   6.116 ns |  1.00 |    0.00 |
-| CustomAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |          1024 |   482.04 ns |  8.686 ns |   8.125 ns |  0.89 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|       SystemPosition | .NET 6.0 | .NET 6.0 |       Position |         -1024 | 1,206.02 ns | 23.725 ns |  26.370 ns |  1.00 |    0.00 |
-|       CustomPosition | .NET 6.0 | .NET 6.0 |       Position |         -1024 |   366.50 ns |  7.134 ns |  10.232 ns |  0.31 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-|       SystemPosition | .NET 6.0 | .NET 6.0 |       Position |             4 | 2,978.86 ns | 19.441 ns |  18.185 ns |  1.00 |    0.00 |
-|       CustomPosition | .NET 6.0 | .NET 6.0 |       Position |             4 |   490.45 ns |  0.910 ns |   0.760 ns |  0.16 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|       SystemPosition | .NET 6.0 | .NET 6.0 |       Position |           128 | 2,904.62 ns | 34.240 ns |  30.353 ns |  1.00 |    0.00 |
-|       CustomPosition | .NET 6.0 | .NET 6.0 |       Position |           128 |   458.79 ns |  7.812 ns |   6.925 ns |  0.16 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|       SystemPosition | .NET 6.0 | .NET 6.0 |       Position |          1024 | 1,174.63 ns |  8.030 ns |   7.119 ns |  1.00 |    0.00 |
-|       CustomPosition | .NET 6.0 | .NET 6.0 |       Position |          1024 |   453.84 ns |  3.327 ns |   3.112 ns |  0.39 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |         -1024 |   744.37 ns |  5.769 ns |   5.114 ns |  1.00 |    0.00 |
-|        CustomTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |         -1024 |   633.54 ns |  8.084 ns |   7.561 ns |  0.85 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |             4 |   743.34 ns |  8.797 ns |   7.346 ns |  1.00 |    0.00 |
-|        CustomTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |             4 |   646.94 ns | 12.953 ns |  18.577 ns |  0.88 |    0.03 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |           128 |   747.71 ns | 12.951 ns |  12.114 ns |  1.00 |    0.00 |
-|        CustomTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |           128 |   636.12 ns | 12.348 ns |  11.550 ns |  0.85 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |          1024 |   731.16 ns |  4.199 ns |   3.928 ns |  1.00 |    0.00 |
-|        CustomTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |          1024 |   616.01 ns |  0.792 ns |   0.618 ns |  0.84 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryRead | .NET 6.0 | .NET 6.0 |        TryRead |         -1024 | 1,562.38 ns |  6.278 ns |   5.243 ns |  1.00 |    0.00 |
-|        CustomTryRead | .NET 6.0 | .NET 6.0 |        TryRead |         -1024 | 1,342.84 ns |  1.445 ns |   1.281 ns |  0.86 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryRead | .NET 6.0 | .NET 6.0 |        TryRead |             4 | 3,980.50 ns | 61.784 ns |  57.792 ns |  1.00 |    0.00 |
-|        CustomTryRead | .NET 6.0 | .NET 6.0 |        TryRead |             4 | 2,834.91 ns | 14.719 ns |  12.291 ns |  0.71 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryRead | .NET 6.0 | .NET 6.0 |        TryRead |           128 | 1,719.42 ns | 33.563 ns |  38.651 ns |  1.00 |    0.00 |
-|        CustomTryRead | .NET 6.0 | .NET 6.0 |        TryRead |           128 | 1,479.84 ns |  7.696 ns |   6.822 ns |  0.85 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryRead | .NET 6.0 | .NET 6.0 |        TryRead |          1024 | 1,562.17 ns |  7.593 ns |   6.731 ns |  1.00 |    0.00 |
-|        CustomTryRead | .NET 6.0 | .NET 6.0 |        TryRead |          1024 | 1,341.58 ns |  1.561 ns |   1.219 ns |  0.86 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|      SystemTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |         -1024 |   290.15 ns |  4.439 ns |   4.152 ns |  1.00 |    0.00 |
-|      CustomTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |         -1024 |   263.15 ns |  0.749 ns |   0.585 ns |  0.91 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-|      SystemTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |             4 | 3,233.55 ns | 24.345 ns |  20.329 ns |  1.00 |    0.00 |
-|      CustomTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |             4 | 2,989.38 ns | 38.242 ns |  39.272 ns |  0.93 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-|      SystemTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |           128 |   383.30 ns |  7.589 ns |   7.793 ns |  1.00 |    0.00 |
-|      CustomTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |           128 |   334.67 ns |  4.586 ns |   3.830 ns |  0.87 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|      SystemTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |          1024 |   265.24 ns |  3.725 ns |   3.484 ns |  1.00 |    0.00 |
-|      CustomTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |          1024 |   294.39 ns |  5.064 ns |   4.974 ns |  1.11 |    0.03 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemAdvance | .NET 6.0 | .NET 6.0 |        Advance |          1024 |    1.150 us | 0.0171 us |   1.149 us |  1.00 |    0.00 |
-|        CustomAdvance | .NET 6.0 | .NET 6.0 |        Advance |          1024 |    1.357 us | 0.0117 us |   1.355 us |  1.18 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemAdvance | .NET 7.0 | .NET 7.0 |        Advance |         -1024 |    1.158 us | 0.0214 us |   1.162 us |  1.00 |    0.00 |
-|        CustomAdvance | .NET 7.0 | .NET 7.0 |        Advance |         -1024 |    1.229 us | 0.0139 us |   1.225 us |  1.06 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemAdvance | .NET 7.0 | .NET 7.0 |        Advance |             4 |    3.922 us | 0.0673 us |   3.908 us |  1.00 |    0.00 |
-|        CustomAdvance | .NET 7.0 | .NET 7.0 |        Advance |             4 |    3.030 us | 0.0524 us |   3.018 us |  0.77 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemAdvance | .NET 7.0 | .NET 7.0 |        Advance |           128 |    1.507 us | 0.0182 us |   1.505 us |  1.00 |    0.00 |
-|        CustomAdvance | .NET 7.0 | .NET 7.0 |        Advance |           128 |    1.151 us | 0.0218 us |   1.133 us |  0.78 |    0.03 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemAdvance | .NET 7.0 | .NET 7.0 |        Advance |          1024 |    1.172 us | 0.0218 us |   1.163 us |  1.00 |    0.00 |
-|        CustomAdvance | .NET 7.0 | .NET 7.0 |        Advance |          1024 |    1.140 us | 0.0221 us |   1.139 us |  0.97 |    0.04 |
-|                      |          |          |                |               |             |           |            |       |         |
-| SystemAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |         -1024 |   862.42 ns | 17.110 ns |  32.136 ns |  1.00 |    0.00 |
-| CustomAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |         -1024 |   928.85 ns |  9.950 ns |   8.309 ns |  1.09 |    0.05 |
-|                      |          |          |                |               |             |           |            |       |         |
-| SystemAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |             4 | 3,473.60 ns | 48.677 ns |  45.533 ns |  1.00 |    0.00 |
-| CustomAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |             4 | 2,970.50 ns | 40.920 ns |  38.276 ns |  0.86 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-| SystemAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |           128 |   882.79 ns | 13.582 ns |  21.932 ns |  1.00 |    0.00 |
-| CustomAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |           128 | 1,038.76 ns | 20.344 ns |  19.981 ns |  1.18 |    0.04 |
-|                      |          |          |                |               |             |           |            |       |         |
-| SystemAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |          1024 |   777.15 ns | 14.996 ns |  13.293 ns |  1.00 |    0.00 |
-| CustomAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |          1024 |   915.26 ns | 10.451 ns |   9.264 ns |  1.18 |    0.03 |
-|                      |          |          |                |               |             |           |            |       |         |
-|       SystemPosition | .NET 7.0 | .NET 7.0 |       Position |         -1024 | 1,064.98 ns |  8.800 ns |   7.348 ns |  1.00 |    0.00 |
-|       CustomPosition | .NET 7.0 | .NET 7.0 |       Position |         -1024 |   294.31 ns |  4.227 ns |   3.954 ns |  0.28 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|       SystemPosition | .NET 7.0 | .NET 7.0 |       Position |             4 | 2,938.00 ns | 16.304 ns |  14.453 ns |  1.00 |    0.00 |
-|       CustomPosition | .NET 7.0 | .NET 7.0 |       Position |             4 |   320.54 ns |  1.733 ns |   1.447 ns |  0.11 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|       SystemPosition | .NET 7.0 | .NET 7.0 |       Position |           128 | 2,457.86 ns | 23.237 ns |  21.736 ns |  1.00 |    0.00 |
-|       CustomPosition | .NET 7.0 | .NET 7.0 |       Position |           128 |   291.03 ns |  2.969 ns |   2.632 ns |  0.12 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|       SystemPosition | .NET 7.0 | .NET 7.0 |       Position |          1024 | 1,076.13 ns | 15.774 ns |  14.755 ns |  1.00 |    0.00 |
-|       CustomPosition | .NET 7.0 | .NET 7.0 |       Position |          1024 |   289.30 ns |  0.883 ns |   0.783 ns |  0.27 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |         -1024 |   682.26 ns |  7.043 ns |   6.243 ns |  1.00 |    0.00 |
-|        CustomTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |         -1024 |   904.33 ns |  7.189 ns |   6.725 ns |  1.33 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |             4 |   694.92 ns | 13.460 ns |  14.402 ns |  1.00 |    0.00 |
-|        CustomTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |             4 |   907.40 ns | 12.752 ns |  11.928 ns |  1.30 |    0.03 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |           128 |   684.61 ns |  8.489 ns |   7.941 ns |  1.00 |    0.00 |
-|        CustomTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |           128 |   899.38 ns | 10.848 ns |   9.617 ns |  1.32 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |          1024 |   673.62 ns |  2.386 ns |   2.232 ns |  1.00 |    0.00 |
-|        CustomTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |          1024 |   894.66 ns |  3.812 ns |   3.566 ns |  1.33 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryRead | .NET 7.0 | .NET 7.0 |        TryRead |         -1024 | 1,552.72 ns |  2.209 ns |   1.958 ns |  1.00 |    0.00 |
-|        CustomTryRead | .NET 7.0 | .NET 7.0 |        TryRead |         -1024 | 1,136.84 ns |  6.822 ns |   6.047 ns |  0.73 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryRead | .NET 7.0 | .NET 7.0 |        TryRead |             4 | 3,940.47 ns | 29.446 ns |  27.544 ns |  1.00 |    0.00 |
-|        CustomTryRead | .NET 7.0 | .NET 7.0 |        TryRead |             4 | 2,464.97 ns | 20.002 ns |  16.702 ns |  0.63 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryRead | .NET 7.0 | .NET 7.0 |        TryRead |           128 | 1,680.41 ns | 10.345 ns |   9.171 ns |  1.00 |    0.00 |
-|        CustomTryRead | .NET 7.0 | .NET 7.0 |        TryRead |           128 | 1,248.40 ns |  6.563 ns |   5.818 ns |  0.74 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryRead | .NET 7.0 | .NET 7.0 |        TryRead |          1024 | 1,561.57 ns |  9.340 ns |   7.800 ns |  1.00 |    0.00 |
-|        CustomTryRead | .NET 7.0 | .NET 7.0 |        TryRead |          1024 | 1,128.56 ns |  5.116 ns |   4.535 ns |  0.72 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|      SystemTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |         -1024 |   105.53 ns |  0.724 ns |   0.642 ns |  1.00 |    0.00 |
-|      CustomTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |         -1024 |    95.17 ns |  1.905 ns |   1.956 ns |  0.90 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|      SystemTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |             4 | 3,263.36 ns | 43.251 ns |  40.457 ns |  1.00 |    0.00 |
-|      CustomTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |             4 | 2,752.51 ns | 54.318 ns |  62.552 ns |  0.85 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|      SystemTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |           128 |   177.88 ns |  2.285 ns |   2.026 ns |  1.00 |    0.00 |
-|      CustomTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |           128 |   159.48 ns |  2.895 ns |   2.417 ns |  0.90 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|      SystemTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |          1024 |   108.54 ns |  1.449 ns |   1.355 ns |  1.00 |    0.00 |
-|      CustomTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |          1024 |   103.87 ns |  1.167 ns |   1.091 ns |  0.96 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemAdvance | .NET 8.0 | .NET 8.0 |        Advance |         -1024 |    1.146 us | 0.0186 us |  0.0165 us |  1.00 |    0.00 |
-|        CustomAdvance | .NET 8.0 | .NET 8.0 |        Advance |         -1024 |    1.347 us | 0.0191 us |  0.0196 us |  1.18 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemAdvance | .NET 8.0 | .NET 8.0 |        Advance |             4 |    3.681 us | 0.0446 us |  0.0395 us |  1.00 |    0.00 |
-|        CustomAdvance | .NET 8.0 | .NET 8.0 |        Advance |             4 |    3.206 us | 0.0616 us |  0.0757 us |  0.87 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemAdvance | .NET 8.0 | .NET 8.0 |        Advance |           128 |    1.281 us | 0.0164 us |  0.0154 us |  1.00 |    0.00 |
-|        CustomAdvance | .NET 8.0 | .NET 8.0 |        Advance |           128 |    1.433 us | 0.0132 us |  0.0124 us |  1.12 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemAdvance | .NET 8.0 | .NET 8.0 |        Advance |          1024 |    1.170 us | 0.0230 us |  0.0265 us |  1.00 |    0.00 |
-|        CustomAdvance | .NET 8.0 | .NET 8.0 |        Advance |          1024 |    1.353 us | 0.0270 us |  0.0252 us |  1.16 |    0.03 |
-|                      |          |          |                |               |             |           |            |       |         |
-| SystemAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |         -1024 |   923.02 ns | 16.895 ns |  15.803 ns |  1.00 |    0.00 |
-| CustomAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |         -1024 |   483.57 ns |  9.582 ns |  10.650 ns |  0.53 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-| SystemAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |             4 | 3,252.70 ns | 45.092 ns |  39.973 ns |  1.00 |    0.00 |
-| CustomAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |             4 | 2,930.17 ns | 55.844 ns |  57.348 ns |  0.90 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-| SystemAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |           128 | 1,032.00 ns |  8.626 ns |   6.735 ns |  1.00 |    0.00 |
-| CustomAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |           128 |   636.44 ns |  7.899 ns |   7.388 ns |  0.62 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-| SystemAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |          1024 |   912.27 ns | 10.287 ns |   9.623 ns |  1.00 |    0.00 |
-| CustomAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |          1024 |   472.82 ns |  5.715 ns |   5.067 ns |  0.52 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-|       SystemPosition | .NET 8.0 | .NET 8.0 |       Position |         -1024 | 1,028.48 ns | 19.348 ns |  17.151 ns |  1.00 |    0.00 |
-|       CustomPosition | .NET 8.0 | .NET 8.0 |       Position |         -1024 |   295.30 ns |  5.307 ns |   4.705 ns |  0.29 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|       SystemPosition | .NET 8.0 | .NET 8.0 |       Position |             4 | 2,572.16 ns | 26.545 ns |  24.831 ns |  1.00 |    0.00 |
-|       CustomPosition | .NET 8.0 | .NET 8.0 |       Position |             4 |   325.16 ns |  4.540 ns |   3.791 ns |  0.13 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|       SystemPosition | .NET 8.0 | .NET 8.0 |       Position |           128 | 2,457.29 ns | 23.744 ns |  22.211 ns |  1.00 |    0.00 |
-|       CustomPosition | .NET 8.0 | .NET 8.0 |       Position |           128 |   291.12 ns |  2.086 ns |   1.849 ns |  0.12 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|       SystemPosition | .NET 8.0 | .NET 8.0 |       Position |          1024 | 1,018.63 ns | 13.894 ns |  12.997 ns |  1.00 |    0.00 |
-|       CustomPosition | .NET 8.0 | .NET 8.0 |       Position |          1024 |   291.49 ns |  3.079 ns |   2.730 ns |  0.29 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |         -1024 |   684.69 ns | 10.249 ns |   9.086 ns |  1.00 |    0.00 |
-|        CustomTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |         -1024 |   573.80 ns |  8.359 ns |   7.410 ns |  0.84 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |             4 |   689.26 ns | 10.338 ns |   9.670 ns |  1.00 |    0.00 |
-|        CustomTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |             4 |   580.86 ns | 11.491 ns |  14.112 ns |  0.85 |    0.03 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |           128 |   674.67 ns |  2.539 ns |   2.120 ns |  1.00 |    0.00 |
-|        CustomTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |           128 |   561.20 ns |  1.292 ns |   1.145 ns |  0.83 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |          1024 |   672.19 ns |  1.381 ns |   1.224 ns |  1.00 |    0.00 |
-|        CustomTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |          1024 |   562.15 ns |  2.108 ns |   1.972 ns |  0.84 |    0.00 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryRead | .NET 8.0 | .NET 8.0 |        TryRead |         -1024 | 1,335.66 ns |  6.252 ns |   5.543 ns |  1.00 |    0.00 |
-|        CustomTryRead | .NET 8.0 | .NET 8.0 |        TryRead |         -1024 | 1,132.33 ns |  7.819 ns |   7.314 ns |  0.85 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryRead | .NET 8.0 | .NET 8.0 |        TryRead |             4 | 3,534.36 ns | 69.488 ns |  95.116 ns |  1.00 |    0.00 |
-|        CustomTryRead | .NET 8.0 | .NET 8.0 |        TryRead |             4 | 2,434.61 ns | 41.495 ns |  38.815 ns |  0.68 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryRead | .NET 8.0 | .NET 8.0 |        TryRead |           128 | 1,457.33 ns |  8.429 ns |   6.581 ns |  1.00 |    0.00 |
-|        CustomTryRead | .NET 8.0 | .NET 8.0 |        TryRead |           128 | 1,250.14 ns |  5.078 ns |   4.750 ns |  0.86 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-|        SystemTryRead | .NET 8.0 | .NET 8.0 |        TryRead |          1024 | 1,352.53 ns | 19.338 ns |  16.148 ns |  1.00 |    0.00 |
-|        CustomTryRead | .NET 8.0 | .NET 8.0 |        TryRead |          1024 | 1,124.97 ns |  1.408 ns |   1.317 ns |  0.83 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-|      SystemTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |         -1024 |   106.28 ns |  2.103 ns |   1.967 ns |  1.00 |    0.00 |
-|      CustomTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |         -1024 |   103.69 ns |  0.315 ns |   0.279 ns |  0.97 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|      SystemTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |             4 | 2,807.37 ns | 25.488 ns |  21.283 ns |  1.00 |    0.00 |
-|      CustomTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |             4 | 2,613.23 ns | 33.564 ns |  28.027 ns |  0.93 |    0.01 |
-|                      |          |          |                |               |             |           |            |       |         |
-|      SystemTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |           128 |   171.37 ns |  2.707 ns |   2.532 ns |  1.00 |    0.00 |
-|      CustomTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |           128 |   156.91 ns |  2.492 ns |   2.209 ns |  0.92 |    0.02 |
-|                      |          |          |                |               |             |           |            |       |         |
-|      SystemTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |          1024 |    95.01 ns |  0.929 ns |   0.725 ns |  1.00 |    0.00 |
-|      CustomTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |          1024 |    91.21 ns |  0.952 ns |   0.844 ns |  0.96 |    0.01 |
+|               Method |      Job |  Runtime |     Categories | SegmentLength |        Mean |     Error |     StdDev |      Median | Ratio | RatioSD |
+|--------------------- |--------- |--------- |--------------- |-------------- |------------:|----------:|-----------:|------------:|------:|--------:|
+|        SystemAdvance | .NET 6.0 | .NET 6.0 |        Advance |         -1024 | 1,129.88 ns |  6.785 ns |   5.666 ns | 1,128.45 ns |  1.00 |    0.00 |
+|        CustomAdvance | .NET 6.0 | .NET 6.0 |        Advance |         -1024 | 1,149.92 ns | 14.830 ns |  12.384 ns | 1,145.08 ns |  1.02 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemAdvance | .NET 6.0 | .NET 6.0 |        Advance |             4 | 4,094.49 ns | 27.500 ns |  22.964 ns | 4,089.53 ns |  1.00 |    0.00 |
+|        CustomAdvance | .NET 6.0 | .NET 6.0 |        Advance |             4 | 3,712.48 ns | 67.401 ns |  89.978 ns | 3,713.49 ns |  0.90 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemAdvance | .NET 6.0 | .NET 6.0 |        Advance |           128 | 1,283.41 ns | 17.942 ns |  15.905 ns | 1,278.84 ns |  1.00 |    0.00 |
+|        CustomAdvance | .NET 6.0 | .NET 6.0 |        Advance |           128 | 1,279.93 ns | 17.003 ns |  15.905 ns | 1,277.81 ns |  1.00 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemAdvance | .NET 6.0 | .NET 6.0 |        Advance |          1024 | 1,152.30 ns | 16.687 ns |  15.609 ns | 1,149.11 ns |  1.00 |    0.00 |
+|        CustomAdvance | .NET 6.0 | .NET 6.0 |        Advance |          1024 | 1,184.17 ns | 22.603 ns |  25.123 ns | 1,173.69 ns |  1.03 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+| SystemAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |         -1024 |   697.47 ns |  8.987 ns |   7.966 ns |   693.84 ns |  1.00 |    0.00 |
+| CustomAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |         -1024 |   486.15 ns |  5.758 ns |   5.105 ns |   485.53 ns |  0.70 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+| SystemAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |             4 | 3,342.24 ns | 36.813 ns |  32.634 ns | 3,342.20 ns |  1.00 |    0.00 |
+| CustomAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |             4 | 2,910.45 ns | 28.978 ns |  27.106 ns | 2,901.58 ns |  0.87 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+| SystemAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |           128 |   663.68 ns | 11.785 ns |  11.024 ns |   660.04 ns |  1.00 |    0.00 |
+| CustomAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |           128 |   637.10 ns | 11.144 ns |  10.425 ns |   635.15 ns |  0.96 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+| SystemAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |          1024 |   722.00 ns | 14.124 ns |  16.814 ns |   722.22 ns |  1.00 |    0.00 |
+| CustomAdvancePastAny | .NET 6.0 | .NET 6.0 | AdvancePastAny |          1024 |   498.18 ns |  9.728 ns |   9.554 ns |   499.75 ns |  0.69 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|       SystemPosition | .NET 6.0 | .NET 6.0 |       Position |         -1024 | 1,193.55 ns | 14.497 ns |  12.851 ns | 1,192.75 ns |  1.00 |    0.00 |
+|       CustomPosition | .NET 6.0 | .NET 6.0 |       Position |         -1024 |   298.82 ns |  4.711 ns |   4.406 ns |   299.26 ns |  0.25 |    0.00 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|       SystemPosition | .NET 6.0 | .NET 6.0 |       Position |             4 | 3,228.38 ns | 36.671 ns |  34.303 ns | 3,219.70 ns |  1.00 |    0.00 |
+|       CustomPosition | .NET 6.0 | .NET 6.0 |       Position |             4 |   331.84 ns |  4.239 ns |   3.965 ns |   330.47 ns |  0.10 |    0.00 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|       SystemPosition | .NET 6.0 | .NET 6.0 |       Position |           128 | 3,166.89 ns | 44.394 ns |  41.526 ns | 3,147.55 ns |  1.00 |    0.00 |
+|       CustomPosition | .NET 6.0 | .NET 6.0 |       Position |           128 |   296.03 ns |  3.626 ns |   3.214 ns |   295.69 ns |  0.09 |    0.00 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|       SystemPosition | .NET 6.0 | .NET 6.0 |       Position |          1024 | 1,209.65 ns | 16.152 ns |  14.318 ns | 1,208.16 ns |  1.00 |    0.00 |
+|       CustomPosition | .NET 6.0 | .NET 6.0 |       Position |          1024 |   296.87 ns |  2.672 ns |   2.369 ns |   296.44 ns |  0.25 |    0.00 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |         -1024 |   762.15 ns |  9.877 ns |   8.756 ns |   761.07 ns |  1.00 |    0.00 |
+|        CustomTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |         -1024 |   646.79 ns | 12.166 ns |  13.522 ns |   645.92 ns |  0.84 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |             4 |   762.61 ns | 10.748 ns |  10.053 ns |   763.38 ns |  1.00 |    0.00 |
+|        CustomTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |             4 |   631.45 ns |  6.938 ns |   6.489 ns |   631.91 ns |  0.83 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |           128 |   748.61 ns |  8.253 ns |   7.720 ns |   750.24 ns |  1.00 |    0.00 |
+|        CustomTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |           128 |   642.44 ns |  8.318 ns |   7.374 ns |   642.41 ns |  0.86 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |          1024 |   746.72 ns |  8.528 ns |   7.560 ns |   746.50 ns |  1.00 |    0.00 |
+|        CustomTryPeek | .NET 6.0 | .NET 6.0 |        TryPeek |          1024 |   646.75 ns | 12.154 ns |  12.481 ns |   644.37 ns |  0.87 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryRead | .NET 6.0 | .NET 6.0 |        TryRead |         -1024 | 1,546.08 ns | 22.560 ns |  19.998 ns | 1,545.62 ns |  1.00 |    0.00 |
+|        CustomTryRead | .NET 6.0 | .NET 6.0 |        TryRead |         -1024 | 1,348.10 ns |  3.392 ns |   3.007 ns | 1,347.28 ns |  0.87 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryRead | .NET 6.0 | .NET 6.0 |        TryRead |             4 | 4,049.90 ns | 75.615 ns |  74.265 ns | 4,020.29 ns |  1.00 |    0.00 |
+|        CustomTryRead | .NET 6.0 | .NET 6.0 |        TryRead |             4 | 2,628.98 ns | 39.715 ns |  40.785 ns | 2,618.38 ns |  0.65 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryRead | .NET 6.0 | .NET 6.0 |        TryRead |           128 | 1,518.13 ns | 22.127 ns |  20.698 ns | 1,513.66 ns |  1.00 |    0.00 |
+|        CustomTryRead | .NET 6.0 | .NET 6.0 |        TryRead |           128 | 1,463.24 ns |  5.387 ns |   5.039 ns | 1,463.14 ns |  0.96 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryRead | .NET 6.0 | .NET 6.0 |        TryRead |          1024 | 1,601.59 ns | 19.822 ns |  18.542 ns | 1,595.01 ns |  1.00 |    0.00 |
+|        CustomTryRead | .NET 6.0 | .NET 6.0 |        TryRead |          1024 | 1,346.79 ns |  7.896 ns |   7.385 ns | 1,346.19 ns |  0.84 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|      SystemTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |         -1024 |   289.07 ns |  1.742 ns |   1.630 ns |   289.41 ns |  1.00 |    0.00 |
+|      CustomTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |         -1024 |   265.83 ns |  1.761 ns |   1.471 ns |   265.71 ns |  0.92 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|      SystemTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |             4 | 3,190.03 ns | 30.483 ns |  27.022 ns | 3,183.56 ns |  1.00 |    0.00 |
+|      CustomTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |             4 | 2,796.34 ns | 53.524 ns |  50.066 ns | 2,799.94 ns |  0.88 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|      SystemTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |           128 |   357.08 ns |  2.296 ns |   2.035 ns |   356.87 ns |  1.00 |    0.00 |
+|      CustomTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |           128 |   360.47 ns |  1.477 ns |   1.234 ns |   360.60 ns |  1.01 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|      SystemTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |          1024 |   263.50 ns |  2.082 ns |   1.846 ns |   263.27 ns |  1.00 |    0.00 |
+|      CustomTryReadTo | .NET 6.0 | .NET 6.0 |      TryReadTo |          1024 |   265.05 ns |  2.328 ns |   2.064 ns |   264.54 ns |  1.01 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemAdvance | .NET 7.0 | .NET 7.0 |        Advance |         -1024 | 1,127.67 ns |  8.113 ns |   7.588 ns | 1,125.91 ns |  1.00 |    0.00 |
+|        CustomAdvance | .NET 7.0 | .NET 7.0 |        Advance |         -1024 | 1,156.25 ns | 13.132 ns |  10.966 ns | 1,156.73 ns |  1.02 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemAdvance | .NET 7.0 | .NET 7.0 |        Advance |             4 | 4,052.04 ns | 70.899 ns |  89.664 ns | 4,028.83 ns |  1.00 |    0.00 |
+|        CustomAdvance | .NET 7.0 | .NET 7.0 |        Advance |             4 | 3,412.24 ns | 60.076 ns |  56.195 ns | 3,382.70 ns |  0.84 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemAdvance | .NET 7.0 | .NET 7.0 |        Advance |           128 | 1,308.83 ns | 15.905 ns |  14.877 ns | 1,309.15 ns |  1.00 |    0.00 |
+|        CustomAdvance | .NET 7.0 | .NET 7.0 |        Advance |           128 | 1,094.06 ns | 21.274 ns |  24.499 ns | 1,088.82 ns |  0.84 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemAdvance | .NET 7.0 | .NET 7.0 |        Advance |          1024 | 1,383.16 ns | 24.000 ns |  21.276 ns | 1,378.79 ns |  1.00 |    0.00 |
+|        CustomAdvance | .NET 7.0 | .NET 7.0 |        Advance |          1024 | 1,050.63 ns | 18.108 ns |  16.938 ns | 1,048.62 ns |  0.76 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+| SystemAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |         -1024 |   780.41 ns | 10.550 ns |   9.869 ns |   779.67 ns |  1.00 |    0.00 |
+| CustomAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |         -1024 |   935.19 ns | 15.429 ns |  13.678 ns |   931.66 ns |  1.20 |    0.03 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+| SystemAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |             4 | 3,506.61 ns | 41.907 ns |  37.149 ns | 3,494.10 ns |  1.00 |    0.00 |
+| CustomAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |             4 | 3,034.87 ns | 57.281 ns |  53.581 ns | 3,011.78 ns |  0.86 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+| SystemAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |           128 |   874.81 ns | 16.649 ns |  14.759 ns |   876.18 ns |  1.00 |    0.00 |
+| CustomAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |           128 | 1,055.48 ns | 20.373 ns |  21.799 ns | 1,052.58 ns |  1.20 |    0.04 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+| SystemAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |          1024 |   769.49 ns | 12.199 ns |  10.814 ns |   769.62 ns |  1.00 |    0.00 |
+| CustomAdvancePastAny | .NET 7.0 | .NET 7.0 | AdvancePastAny |          1024 |   936.74 ns | 14.112 ns |  12.510 ns |   936.45 ns |  1.22 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|       SystemPosition | .NET 7.0 | .NET 7.0 |       Position |         -1024 | 1,083.67 ns | 15.855 ns |  14.055 ns | 1,082.66 ns |  1.00 |    0.00 |
+|       CustomPosition | .NET 7.0 | .NET 7.0 |       Position |         -1024 |   296.28 ns |  2.805 ns |   2.342 ns |   295.94 ns |  0.27 |    0.00 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|       SystemPosition | .NET 7.0 | .NET 7.0 |       Position |             4 | 2,985.12 ns | 34.453 ns |  32.227 ns | 2,977.51 ns |  1.00 |    0.00 |
+|       CustomPosition | .NET 7.0 | .NET 7.0 |       Position |             4 |   330.57 ns |  4.979 ns |   4.658 ns |   331.09 ns |  0.11 |    0.00 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|       SystemPosition | .NET 7.0 | .NET 7.0 |       Position |           128 | 2,490.77 ns | 28.397 ns |  25.174 ns | 2,490.11 ns |  1.00 |    0.00 |
+|       CustomPosition | .NET 7.0 | .NET 7.0 |       Position |           128 |   298.10 ns |  4.921 ns |   4.603 ns |   297.72 ns |  0.12 |    0.00 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|       SystemPosition | .NET 7.0 | .NET 7.0 |       Position |          1024 | 1,105.08 ns | 21.673 ns |  26.617 ns | 1,099.55 ns |  1.00 |    0.00 |
+|       CustomPosition | .NET 7.0 | .NET 7.0 |       Position |          1024 |   300.98 ns |  5.401 ns |   5.052 ns |   301.44 ns |  0.27 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |         -1024 |   691.29 ns |  8.087 ns |   7.565 ns |   689.38 ns |  1.00 |    0.00 |
+|        CustomTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |         -1024 |   914.24 ns | 11.597 ns |  10.281 ns |   911.05 ns |  1.32 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |             4 |   690.02 ns |  8.501 ns |   7.536 ns |   690.20 ns |  1.00 |    0.00 |
+|        CustomTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |             4 |   918.66 ns | 16.100 ns |  15.060 ns |   914.26 ns |  1.33 |    0.03 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |           128 |   696.47 ns | 10.532 ns |   9.852 ns |   699.88 ns |  1.00 |    0.00 |
+|        CustomTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |           128 |   917.33 ns | 12.482 ns |  11.065 ns |   918.65 ns |  1.32 |    0.03 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |          1024 |   690.70 ns |  8.560 ns |   7.589 ns |   689.91 ns |  1.00 |    0.00 |
+|        CustomTryPeek | .NET 7.0 | .NET 7.0 |        TryPeek |          1024 |   915.36 ns | 14.320 ns |  11.958 ns |   918.66 ns |  1.33 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryRead | .NET 7.0 | .NET 7.0 |        TryRead |         -1024 | 1,583.88 ns | 15.790 ns |  14.770 ns | 1,585.08 ns |  1.00 |    0.00 |
+|        CustomTryRead | .NET 7.0 | .NET 7.0 |        TryRead |         -1024 | 1,133.60 ns |  4.117 ns |   3.851 ns | 1,132.44 ns |  0.72 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryRead | .NET 7.0 | .NET 7.0 |        TryRead |             4 | 4,008.42 ns | 36.551 ns |  30.521 ns | 4,003.95 ns |  1.00 |    0.00 |
+|        CustomTryRead | .NET 7.0 | .NET 7.0 |        TryRead |             4 | 2,597.60 ns | 22.840 ns |  20.247 ns | 2,598.81 ns |  0.65 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryRead | .NET 7.0 | .NET 7.0 |        TryRead |           128 | 1,719.93 ns | 20.659 ns |  18.314 ns | 1,715.53 ns |  1.00 |    0.00 |
+|        CustomTryRead | .NET 7.0 | .NET 7.0 |        TryRead |           128 | 1,261.88 ns |  2.454 ns |   2.049 ns | 1,261.22 ns |  0.73 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryRead | .NET 7.0 | .NET 7.0 |        TryRead |          1024 | 1,579.26 ns | 14.002 ns |  13.097 ns | 1,576.11 ns |  1.00 |    0.00 |
+|        CustomTryRead | .NET 7.0 | .NET 7.0 |        TryRead |          1024 | 1,130.38 ns |  5.182 ns |   4.045 ns | 1,129.82 ns |  0.72 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|      SystemTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |         -1024 |   106.88 ns |  0.666 ns |   0.591 ns |   106.79 ns |  1.00 |    0.00 |
+|      CustomTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |         -1024 |   106.64 ns |  0.922 ns |   0.863 ns |   106.34 ns |  1.00 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|      SystemTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |             4 | 3,263.69 ns | 35.190 ns |  27.474 ns | 3,264.05 ns |  1.00 |    0.00 |
+|      CustomTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |             4 | 2,776.49 ns | 41.352 ns |  38.680 ns | 2,773.14 ns |  0.85 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|      SystemTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |           128 |   177.36 ns |  2.514 ns |   2.352 ns |   176.58 ns |  1.00 |    0.00 |
+|      CustomTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |           128 |   158.81 ns |  2.050 ns |   1.712 ns |   158.54 ns |  0.89 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|      SystemTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |          1024 |   107.64 ns |  0.607 ns |   0.538 ns |   107.58 ns |  1.00 |    0.00 |
+|      CustomTryReadTo | .NET 7.0 | .NET 7.0 |      TryReadTo |          1024 |   104.24 ns |  1.170 ns |   1.037 ns |   103.86 ns |  0.97 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemAdvance | .NET 8.0 | .NET 8.0 |        Advance |         -1024 | 1,168.07 ns | 22.066 ns |  40.901 ns | 1,148.61 ns |  1.00 |    0.00 |
+|        CustomAdvance | .NET 8.0 | .NET 8.0 |        Advance |         -1024 | 1,191.13 ns | 23.380 ns |  25.017 ns | 1,185.43 ns |  1.01 |    0.04 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemAdvance | .NET 8.0 | .NET 8.0 |        Advance |             4 | 3,678.21 ns | 40.771 ns |  36.142 ns | 3,682.87 ns |  1.00 |    0.00 |
+|        CustomAdvance | .NET 8.0 | .NET 8.0 |        Advance |             4 | 3,444.09 ns | 68.845 ns | 103.043 ns | 3,422.81 ns |  0.94 |    0.04 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemAdvance | .NET 8.0 | .NET 8.0 |        Advance |           128 | 1,312.17 ns | 24.406 ns |  23.970 ns | 1,315.68 ns |  1.00 |    0.00 |
+|        CustomAdvance | .NET 8.0 | .NET 8.0 |        Advance |           128 | 1,282.36 ns | 21.419 ns |  20.036 ns | 1,274.92 ns |  0.98 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemAdvance | .NET 8.0 | .NET 8.0 |        Advance |          1024 | 1,181.49 ns | 22.636 ns |  22.231 ns | 1,181.85 ns |  1.00 |    0.00 |
+|        CustomAdvance | .NET 8.0 | .NET 8.0 |        Advance |          1024 | 1,272.42 ns | 17.486 ns |  14.602 ns | 1,276.10 ns |  1.08 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+| SystemAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |         -1024 |   936.02 ns | 14.608 ns |  13.664 ns |   933.66 ns |  1.00 |    0.00 |
+| CustomAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |         -1024 |   483.00 ns |  8.148 ns |   7.622 ns |   480.88 ns |  0.52 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+| SystemAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |             4 | 3,453.54 ns | 39.785 ns |  35.269 ns | 3,452.25 ns |  1.00 |    0.00 |
+| CustomAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |             4 | 2,861.16 ns | 30.872 ns |  25.779 ns | 2,860.76 ns |  0.83 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+| SystemAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |           128 |   966.54 ns | 17.317 ns |  16.198 ns |   967.02 ns |  1.00 |    0.00 |
+| CustomAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |           128 |   659.86 ns | 13.122 ns |  16.595 ns |   656.69 ns |  0.67 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+| SystemAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |          1024 |   943.51 ns | 18.669 ns |  26.774 ns |   942.61 ns |  1.00 |    0.00 |
+| CustomAdvancePastAny | .NET 8.0 | .NET 8.0 | AdvancePastAny |          1024 |   481.56 ns |  9.227 ns |   9.475 ns |   478.27 ns |  0.51 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|       SystemPosition | .NET 8.0 | .NET 8.0 |       Position |         -1024 | 1,025.88 ns | 13.894 ns |  12.316 ns | 1,025.61 ns |  1.00 |    0.00 |
+|       CustomPosition | .NET 8.0 | .NET 8.0 |       Position |         -1024 |   297.15 ns |  5.822 ns |   5.446 ns |   297.10 ns |  0.29 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|       SystemPosition | .NET 8.0 | .NET 8.0 |       Position |             4 | 2,318.51 ns | 43.706 ns |  42.926 ns | 2,312.41 ns |  1.00 |    0.00 |
+|       CustomPosition | .NET 8.0 | .NET 8.0 |       Position |             4 |   333.68 ns |  5.821 ns |   5.445 ns |   333.36 ns |  0.14 |    0.00 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|       SystemPosition | .NET 8.0 | .NET 8.0 |       Position |           128 | 2,559.04 ns | 49.338 ns |  62.397 ns | 2,561.22 ns |  1.00 |    0.00 |
+|       CustomPosition | .NET 8.0 | .NET 8.0 |       Position |           128 |   301.13 ns |  3.690 ns |   3.271 ns |   300.76 ns |  0.12 |    0.00 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|       SystemPosition | .NET 8.0 | .NET 8.0 |       Position |          1024 | 1,029.05 ns | 11.641 ns |  10.320 ns | 1,026.26 ns |  1.00 |    0.00 |
+|       CustomPosition | .NET 8.0 | .NET 8.0 |       Position |          1024 |   298.59 ns |  3.548 ns |   3.319 ns |   298.73 ns |  0.29 |    0.00 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |         -1024 |   687.71 ns |  6.373 ns |   5.322 ns |   689.43 ns |  1.00 |    0.00 |
+|        CustomTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |         -1024 |   574.76 ns |  5.466 ns |   4.845 ns |   575.24 ns |  0.84 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |             4 |   687.83 ns |  3.641 ns |   3.040 ns |   688.21 ns |  1.00 |    0.00 |
+|        CustomTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |             4 |   577.90 ns |  5.268 ns |   4.928 ns |   576.12 ns |  0.84 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |           128 |   695.64 ns | 11.350 ns |  10.061 ns |   692.31 ns |  1.00 |    0.00 |
+|        CustomTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |           128 |   579.12 ns |  5.074 ns |   4.498 ns |   578.51 ns |  0.83 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |          1024 |   701.00 ns | 11.822 ns |  10.480 ns |   702.95 ns |  1.00 |    0.00 |
+|        CustomTryPeek | .NET 8.0 | .NET 8.0 |        TryPeek |          1024 |   575.22 ns |  7.049 ns |   6.594 ns |   575.70 ns |  0.82 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryRead | .NET 8.0 | .NET 8.0 |        TryRead |         -1024 | 1,365.25 ns | 14.104 ns |  13.192 ns | 1,365.07 ns |  1.00 |    0.00 |
+|        CustomTryRead | .NET 8.0 | .NET 8.0 |        TryRead |         -1024 | 1,141.62 ns |  5.849 ns |   5.471 ns | 1,140.21 ns |  0.84 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryRead | .NET 8.0 | .NET 8.0 |        TryRead |             4 | 3,425.60 ns | 22.879 ns |  20.282 ns | 3,420.84 ns |  1.00 |    0.00 |
+|        CustomTryRead | .NET 8.0 | .NET 8.0 |        TryRead |             4 | 2,645.33 ns | 34.670 ns |  32.430 ns | 2,639.26 ns |  0.77 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryRead | .NET 8.0 | .NET 8.0 |        TryRead |           128 | 1,486.26 ns | 11.538 ns |   9.635 ns | 1,483.11 ns |  1.00 |    0.00 |
+|        CustomTryRead | .NET 8.0 | .NET 8.0 |        TryRead |           128 | 1,271.63 ns |  9.442 ns |   8.832 ns | 1,268.88 ns |  0.85 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|        SystemTryRead | .NET 8.0 | .NET 8.0 |        TryRead |          1024 | 1,368.11 ns | 17.375 ns |  15.402 ns | 1,363.26 ns |  1.00 |    0.00 |
+|        CustomTryRead | .NET 8.0 | .NET 8.0 |        TryRead |          1024 | 1,135.37 ns |  4.389 ns |   3.665 ns | 1,135.06 ns |  0.83 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|      SystemTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |         -1024 |   105.06 ns |  0.733 ns |   0.650 ns |   104.98 ns |  1.00 |    0.00 |
+|      CustomTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |         -1024 |   105.18 ns |  0.684 ns |   0.606 ns |   105.02 ns |  1.00 |    0.01 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|      SystemTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |             4 | 2,901.12 ns | 46.316 ns |  41.058 ns | 2,884.43 ns |  1.00 |    0.00 |
+|      CustomTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |             4 | 2,808.88 ns | 23.028 ns |  20.414 ns | 2,800.34 ns |  0.97 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|      SystemTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |           128 |   167.09 ns |  2.216 ns |   1.964 ns |   166.18 ns |  1.00 |    0.00 |
+|      CustomTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |           128 |   161.73 ns |  2.414 ns |   2.258 ns |   160.83 ns |  0.97 |    0.02 |
+|                      |          |          |                |               |             |           |            |             |       |         |
+|      SystemTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |          1024 |    94.23 ns |  0.519 ns |   0.460 ns |    94.24 ns |  1.00 |    0.00 |
+|      CustomTryReadTo | .NET 8.0 | .NET 8.0 |      TryReadTo |          1024 |   104.31 ns |  0.439 ns |   0.342 ns |   104.19 ns |  1.11 |    0.01 |
