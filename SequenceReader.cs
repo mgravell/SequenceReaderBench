@@ -314,7 +314,8 @@ namespace System.Buffers2 {
         public void Advance(long count) {
             AssertValidPosition();
             const long TooBigOrNegative = unchecked((long)0xFFFFFFFF80000000);
-            if ((count & TooBigOrNegative) == 0 && _currentSpan.Length - _currentSpanIndex > (int)count) {
+            if ((count & TooBigOrNegative) == 0 & _currentSpan.Length - _currentSpanIndex > (int)count) {
+                // ^^^ note & (rather than &&) is intentional; both sides can be safely evaluated
                 _currentSpanIndex += (int)count;
             }
             else {
