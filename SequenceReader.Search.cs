@@ -728,7 +728,7 @@ namespace System.Buffers2 {
                 next = next.Slice(currentSpan.Length);
 
                 // Need to check the next segment
-                if (!TryGetNextBuffer(in _sequence, ref segment, ref currentSpan, out _)) {
+                if (TryGetNextBuffer(in _sequence, ref segment, ref currentSpan) != TryGetNextBufferResult.SuccessHaveData) {
                     // Nothing left
                     return false;
                 }
